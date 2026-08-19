@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Rienda — Precios y Comparativo</title>
+<style>
+  :root{
+    --verde:#2f3b26;
+    --verde-oscuro:#232c1c;
+    --crema:#f5ead9;
+    --crema-suave:#faf3e8;
+    --texto:#2f3b26;
+    --gris:#6b6558;
+    --check:#3f7a3f;
+    --cruz:#a6453a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background:var(--crema-suave);
+    color:var(--texto);
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:48px 24px 80px;}
+  header{
+    background:var(--verde);
+    color:var(--crema);
+    padding:56px 24px;
+    text-align:center;
+  }
+  header .logo{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:0.5px;
+    margin-bottom:18px;
+  }
+  header h1{
+    font-size:34px;
+    margin:0 0 12px;
+    line-height:1.25;
+  }
+  header p{
+    font-size:17px;
+    color:#dcd6c4;
+    max-width:560px;
+    margin:0 auto;
+  }
+  h2{
+    font-size:24px;
+    margin:0 0 6px;
+    color:var(--verde);
+  }
+  .subtitle{
+    color:var(--gris);
+    margin:0 0 28px;
+    font-size:15px;
+  }
+  section{margin-top:56px;}
+  table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08);
+  }
+  th, td{
+    padding:14px 18px;
+    text-align:left;
+    font-size:15px;
+  }
+  thead th{
+    background:var(--verde);
+    color:var(--crema);
+    font-weight:600;
+  }
+  tbody tr:nth-child(even){background:var(--crema-suave);}
+  tbody td.precio{
+    font-weight:700;
+    color:var(--verde);
+  }
+  .extras{
+    margin-top:18px;
+    background:#fff;
+    border-radius:10px;
+    padding:18px 22px;
+    font-size:14.5px;
+    color:var(--texto);
+    box-shadow:0 1px 3px rgba(0,0,0,0.06);
+  }
+  .extras li{margin-bottom:6px;}
+  .compare-table th, .compare-table td{
+    text-align:center;
+  }
+  .compare-table td:first-child, .compare-table th:first-child{
+    text-align:left;
+  }
+  .compare-table thead th:nth-child(3){
+    background:var(--verde-oscuro);
+  }
+  .check{color:var(--check);font-weight:700;}
+  .cruz{color:var(--cruz);font-weight:700;}
+  .parcial{color:#a6813a;font-weight:700;}
+  footer{
+    margin-top:64px;
+    text-align:center;
+    color:var(--gris);
+    font-size:13px;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--check);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-left:8px;
+    vertical-align:middle;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🐄 rienda</div>
+  <h1>Tomá las riendas de tu rodeo,<br>a menor costo.</h1>
+  <p>Movimientos, pesajes, sanidad y trazabilidad SENASA — todo desde un mensaje de WhatsApp.</p>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>Planes Rienda</h2>
+    <p class="subtitle">Precios simples, sin letra chica. Elegí según la cantidad de animales de tu operación.</p>
+    <table>
+      <thead>
+        <tr><th>Animales</th><th>Precio mensual</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0 – 500</td><td class="precio">USD 24.99</td></tr>
+        <tr><td>500 – 1.000</td><td class="precio">USD 49.99</td></tr>
+        <tr><td>1.000 – 2.000</td><td class="precio">USD 69.99</td></tr>
+        <tr><td>2.000 – 5.000</td><td class="precio">USD 89.99</td></tr>
+        <tr><td>5.000 – 10.000</td><td class="precio">USD 119.99</td></tr>
+        <tr><td>+10.000</td><td class="precio">A cotizar</td></tr>
+      </tbody>
+    </table>
+
+    <div class="extras">
+      <ul>
+        <li>Primeros <strong>3 campos/potreros gratis</strong>. Cada adicional: <strong>USD 5/mes</strong>.</li>
+        <li><strong>15 días de prueba gratis</strong>, sin tarjeta de crédito y <strong>sin restricciones</strong>: bot de WhatsApp, plataforma web y usuarios ilimitados desde el primer día.</li>
+        <li>Facturación mensual. Más impuestos aplicables.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Otras apps vs Rienda</h2>
+    <p class="subtitle">Mismo concepto, mejor trato.</p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Ítem</th>
+          <th>Otras apps</th>
+          <th>Rienda</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Carga de datos por WhatsApp + IA</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Plataforma web con usuarios ilimitados</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Precio plan inicial (0–500 animales)</td><td>USD 34.99/mes</td><td><strong>USD 24.99/mes</strong></td></tr>
+        <tr><td>Precio plan 5.000–10.000 animales</td><td>USD 129.99/mes</td><td><strong>USD 119.99/mes</strong></td></tr>
+        <tr><td>Campos/potreros incluidos gratis</td><td>2</td><td><strong>3</strong></td></tr>
+        <tr><td>Costo por campo adicional</td><td>USD 9.99/mes</td><td><strong>USD 5/mes</strong></td></tr>
+        <tr><td>Trazabilidad SENASA integrada</td><td><span class="cruz">✗</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Prueba gratis sin restricciones</td><td><span class="parcial">15 días</span></td><td><span class="check">15 días, sin tarjeta</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    Rienda — Control integral de ganado vía WhatsApp · www.rienda.trinitysystems.cc
+  </footer>
+
+</div>
+
+</body>
+</html>
