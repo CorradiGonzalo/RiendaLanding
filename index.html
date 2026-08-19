@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rienda, tomá las riendas de tu rodeo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 100 100" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#33402A"/>
+          <rect x="25" y="24" width="50" height="34" rx="10" fill="#F3E9D6"/>
+          <path d="M45,58 L40,72 L52,58 Z" fill="#F3E9D6"/>
+          <g transform="translate(50,41)">
+            <ellipse cx="-5.5" cy="0" rx="4.5" ry="7" fill="#C1703D" transform="rotate(-18,-5.5,0)"/>
+            <ellipse cx="5.5" cy="0" rx="4.5" ry="7" fill="#C1703D" transform="rotate(18,5.5,0)"/>
+          </g>
+          <circle cx="74" cy="18" r="4.5" fill="#C1703D"/>
+        </svg>
+      </span>
+      rienda
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#funciones">Funciones</a>
+      <a href="#precios">Precios</a>
+      <a href="#comparativa">Comparativa</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <a href="#precios" class="btn btn-primary">Empezar gratis</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <svg id="navToggleIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="#202a19" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="max hero-grid">
+    <div>
+      <h1 class="reveal in">Tomá las riendas de tu rodeo.</h1>
+      <p class="reveal in">Movimientos, pesajes, sanidad y trazabilidad SENASA, todo desde un mensaje de WhatsApp.</p>
+      <div class="hero-ctas reveal in">
+        <a href="#precios" class="btn btn-primary">Empezar gratis</a>
+        <a href="#precios" class="btn btn-ghost">Ver precios</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal in">
+      <video autoplay muted loop playsinline
+        poster="https://images.pexels.com/videos/13158900/cattle-scotland-13158900.jpeg?auto=compress&cs=tinysrgb&h=900&fit=crop&w=900"
+        aria-label="Rodeo pastando en el campo">
+        <source src="https://videos.pexels.com/video-files/13158900/13158900-uhd_2730_1440_25fps.mp4" type="video/mp4">
+      </video>
+      <div class="chip"><span class="chip-dot"></span> Cada movimiento, registrado por WhatsApp</div>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="max facts-grid">
+    <div class="fact reveal">Trazabilidad SENASA integrada</div>
+    <div class="fact reveal">Usuarios ilimitados por campo</div>
+    <div class="fact reveal">Soporte por WhatsApp</div>
+  </div>
+</div>
+
+<section id="funciones">
+  <div class="max">
+    <div class="section-head reveal">
+      <h2>Todo lo que pasa en el campo, ordenado en un solo lugar.</h2>
+    </div>
+    <div class="bento reveal-stagger">
+      <div class="bento-card chat-mock reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 20l1.7-4.6A8 8 0 1 1 9 19.3L4 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Carga por WhatsApp</h3>
+        <p>Mandá un mensaje o un audio y la IA lo interpreta y lo registra en segundos, sin planillas.</p>
+        <div class="phone-frame">
+          <div class="bubble out">Marqué 40 terneros en el potrero Los Ombúes.</div>
+          <div class="bubble in">Listo. Registré 40 terneros en Los Ombúes. Rodeo actualizado a 1.240 cabezas.</div>
+          <div class="bubble out">Genial, gracias.</div>
+        </div>
+      </div>
+
+      <div class="bento-card accent reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 5-3 7.5-7 9-4-1.5-7-4-7-9V7l7-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Trazabilidad SENASA</h3>
+        <p>Movimientos y DTe cargados de forma consistente con la normativa argentina.</p>
+      </div>
+
+      <div class="bento-card media reveal">
+        <video autoplay muted loop playsinline
+          poster="https://images.pexels.com/videos/13158900/cattle-scotland-13158900.jpeg?auto=compress&cs=tinysrgb&h=500&fit=crop&w=700"
+          aria-label="Vacas pastando en el potrero">
+          <source src="https://videos.pexels.com/video-files/13158900/13158900-uhd_2730_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="media-content">
+          <h3>Sanidad y pesajes</h3>
+          <p>Historial de vacunas, tratamientos y peso, animal por animal.</p>
+        </div>
+      </div>
+
+      <div class="bento-card media reveal">
+        <video autoplay muted loop playsinline
+          poster="https://images.pexels.com/videos/36499576/pexels-photo-36499576.jpeg?auto=compress&cs=tinysrgb&h=500&fit=crop&w=700"
+          aria-label="Arriero a caballo trabajando el rodeo">
+          <source src="https://videos.pexels.com/video-files/36499576/15476779_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="media-content">
+          <h3>Movimientos y arreo</h3>
+          <p>Registrá la tropa aunque estés a caballo y sin señal, se sincroniza apenas vuelve la conexión.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cinematic">
+  <video autoplay muted loop playsinline
+    poster="https://images.pexels.com/videos/8625404/action-action-energy-animal-beach-8625404.jpeg?auto=compress&cs=tinysrgb&h=900&fit=crop&w=1600"
+    aria-label="Caballo corriendo en campo abierto">
+    <source src="https://videos.pexels.com/video-files/8625404/8625404-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+  <div class="cinematic-content reveal">
+    <h2>De la tranquera a la pantalla, en el mismo minuto.</h2>
+    <p>Sin importar si estás a caballo, en la camioneta o sin señal. Apenas vuelve la conexión, todo se sincroniza solo.</p>
+  </div>
+</div>
+
+<section id="precios">
+  <div class="max">
+    <div class="section-head reveal">
+      <h2>Precios simples, sin letra chica.</h2>
+      <p class="pricing-toggle-note">Elegí el plan según la cantidad de animales de tu operación. Facturación mensual, más impuestos aplicables.</p>
+    </div>
+
+    <div class="price-grid reveal-stagger">
+      <div class="price-card featured reveal">
+        <span class="price-badge">Para empezar</span>
+        <span class="price-range">0 a 500 animales</span>
+        <span class="price-amount">USD 24.99 <span>/mes</span></span>
+      </div>
+      <div class="price-card reveal">
+        <span class="price-range">500 a 1.000 animales</span>
+        <span class="price-amount">USD 49.99 <span>/mes</span></span>
+      </div>
+      <div class="price-card reveal">
+        <span class="price-range">1.000 a 2.000 animales</span>
+        <span class="price-amount">USD 69.99 <span>/mes</span></span>
+      </div>
+      <div class="price-card reveal">
+        <span class="price-range">2.000 a 5.000 animales</span>
+        <span class="price-amount">USD 89.99 <span>/mes</span></span>
+      </div>
+      <div class="price-card reveal">
+        <span class="price-range">5.000 a 10.000 animales</span>
+        <span class="price-amount">USD 119.99 <span>/mes</span></span>
+      </div>
+      <div class="price-card reveal">
+        <span class="price-range">Más de 10.000 animales</span>
+        <span class="price-amount">A cotizar</span>
+        <span class="price-note">Hablemos de tu operación</span>
+      </div>
+    </div>
+
+    <div class="price-extra reveal">
+      <div class="price-extra-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c98f28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        3 campos o potreros incluidos gratis
+      </div>
+      <div class="price-extra-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c98f28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Campo adicional: USD 5/mes
+      </div>
+      <div class="price-extra-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#c98f28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        15 días gratis, sin tarjeta, sin restricciones
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="comparativa">
+  <div class="max">
+    <div class="section-head reveal">
+      <h2>Otras apps vs Rienda.</h2>
+      <p class="pricing-toggle-note">Mismo concepto, mejor trato para tu bolsillo.</p>
+    </div>
+
+    <div class="compare">
+      <div class="compare-card reveal">
+        <div class="compare-title">Otras apps</div>
+
+        <div class="compare-group">
+          <div class="compare-group-label">Funcionalidad</div>
+          <div class="compare-row"><svg class="icon-yes" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Carga por WhatsApp + IA</div>
+          <div class="compare-row"><svg class="icon-yes" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Plataforma web, usuarios ilimitados</div>
+          <div class="compare-row"><svg class="icon-no" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Trazabilidad SENASA integrada</div>
+        </div>
+
+        <div class="compare-group">
+          <div class="compare-group-label">Precio</div>
+          <div class="compare-row">Plan inicial <span class="compare-value" style="margin-left:auto">USD 34.99/mes</span></div>
+          <div class="compare-row">Plan 5.000 a 10.000 animales <span class="compare-value" style="margin-left:auto">USD 129.99/mes</span></div>
+        </div>
+
+        <div class="compare-group">
+          <div class="compare-group-label">Flexibilidad</div>
+          <div class="compare-row">Campos incluidos gratis <span class="compare-value" style="margin-left:auto">2</span></div>
+          <div class="compare-row">Campo adicional <span class="compare-value" style="margin-left:auto">USD 9.99/mes</span></div>
+          <div class="compare-row">Prueba gratis <span class="compare-value" style="margin-left:auto">15 días</span></div>
+        </div>
+      </div>
+
+      <div class="compare-card win reveal">
+        <div class="compare-title">Rienda <span class="tag">Mejor precio</span></div>
+
+        <div class="compare-group">
+          <div class="compare-group-label">Funcionalidad</div>
+          <div class="compare-row"><svg class="icon-yes" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Carga por WhatsApp + IA</div>
+          <div class="compare-row"><svg class="icon-yes" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Plataforma web, usuarios ilimitados</div>
+          <div class="compare-row"><svg class="icon-yes" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Trazabilidad SENASA integrada</div>
+        </div>
+
+        <div class="compare-group">
+          <div class="compare-group-label">Precio</div>
+          <div class="compare-row">Plan inicial <span class="compare-value" style="margin-left:auto">USD 24.99/mes</span></div>
+          <div class="compare-row">Plan 5.000 a 10.000 animales <span class="compare-value" style="margin-left:auto">USD 119.99/mes</span></div>
+        </div>
+
+        <div class="compare-group">
+          <div class="compare-group-label">Flexibilidad</div>
+          <div class="compare-row">Campos incluidos gratis <span class="compare-value" style="margin-left:auto">3</span></div>
+          <div class="compare-row">Campo adicional <span class="compare-value" style="margin-left:auto">USD 5/mes</span></div>
+          <div class="compare-row">Prueba gratis <span class="compare-value" style="margin-left:auto">15 días, sin tarjeta</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="max">
+    <div class="cta-banner reveal">
+      <h2>Probalo 15 días gratis, sin tarjeta de crédito.</h2>
+      <p>Acceso completo desde el primer día: bot de WhatsApp, panel web y usuarios ilimitados.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn" style="background:var(--accent);color:var(--forest-950);">Empezar gratis</a>
+        <a href="#comparativa" class="btn btn-ghost">Ver comparativa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="max footer-inner">
+    <div class="footer-brand">© 2026 Rienda. Control integral de ganado vía WhatsApp.</div>
+    <div class="footer-links">
+      <a href="https://rienda.org">rienda.org</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#precios">Precios</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
